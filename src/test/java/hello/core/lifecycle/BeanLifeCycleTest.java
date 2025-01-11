@@ -13,10 +13,6 @@ class BeanLifeCycleTest {
 		ConfigurableApplicationContext ac = new AnnotationConfigApplicationContext(LifeCycleConfig.class);
 		NetworkClient client = ac.getBean(NetworkClient.class);
 		ac.close();
-
-		// 생성자 호출, url = null
-		// connect: null
-		// call: null message = 초기화 연결 메시지
 	}
 
 	@Configuration
