@@ -26,6 +26,7 @@ class PrototypeTest {
 		System.out.println("prototypeBean2 = " + prototypeBean2);
 
 		assertThat(prototypeBean1).isNotSameAs(prototypeBean2);
+		ac.close(); // 종료 메서드가 호출되지 않는다.
 	}
 
 	@Scope("prototype")
